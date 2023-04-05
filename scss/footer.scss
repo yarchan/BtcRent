@@ -1,0 +1,233 @@
+@import 'colors.scss';
+@import 'fonts.scss';
+
+.footer {
+  background: $secondary;
+  &__bordered {
+    .footer-wrapper {
+      display: flex;
+      padding: 0 0 104px 144px;
+      .text-bold{
+        font-size: 15px;
+      }
+      &__icon{
+        padding-right: 108px;
+        .text-bold{
+          text-align: center;
+        }
+      }
+      &__content{
+        width: 100%;
+        padding-top: 36px;
+        display: flex;
+        justify-content: start;
+        .personal-account{
+          width: 30%;
+          padding-right: 108px;
+
+          .text-bold{
+            text-decoration: none;
+          }
+          &__bottom{
+            .text-bold{
+              font-size: 12px;
+              line-height: 13px;
+              margin-bottom: 26px;
+            }
+            .btn{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+              margin-bottom: 10px;
+              width: 160px;
+              height: 34px;
+
+              .text-bold{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+                text-decoration: none;
+                margin-bottom: 0;
+                align-items: center;
+              }
+            }
+          }
+        }
+        .footerright-block{
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          .footerright-subblock{
+            width: 100%;
+          }
+          .text-bold{
+            cursor: pointer;
+            width: 40%;
+            text-decoration: none;
+          }
+        }
+
+      }
+      .bitcoin{
+        margin-right: 100px;
+
+      }
+      .cripta{
+        margin-top: -90px;
+      }
+      .cripta:last-child{
+        margin-top: -90px;
+        width: 93px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:1550px) {
+  .footer {
+    &__bordered {
+      .footer-wrapper {
+        padding: 0 0 104px 40px;
+        .cripta:last-child{
+          width: 65px;
+        }
+        .cripta:first-of-type{
+          margin-right: 70px;
+        }
+        .cripta{
+          width: 70px;
+          height: 70px;   
+          margin-top: -75px !important;  
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:1200px) {
+  .footer {
+    background: $secondary;
+    &__bordered {
+      .footer-wrapper {
+        padding: 0 0 104px 40px;
+
+        &__content{
+          .personal-account{
+  
+            .text-bold{
+            }
+            &__bottom{
+              .text-bold{
+              }
+              .btn{
+                .text-bold{
+                  
+                }
+              }
+            }
+          }
+        }
+        .cripta:first-of-type{
+          margin-right: 70px;
+        }
+        .cripta{
+          margin-top: -90px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:1000px) {
+  .footer {
+    background: $secondary;
+    &__bordered {
+      .footer-wrapper {
+        &__icon{
+          padding-right: 20px;
+          .text-bold{
+            text-align: center;
+          }
+        }
+        &__content{
+          .personal-account{
+            padding-right: 20px;
+            .text-bold{
+            }
+            &__bottom{
+              .text-bold{
+              }
+              .btn{
+                .text-bold{
+                }
+              }
+            }
+          }
+        }
+        .cripta:first-of-type{
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:750px) {
+  .footer {
+    background: $secondary;
+    &__bordered {
+      .footer-wrapper {
+        padding: 20px;
+        flex-direction: column;
+        &__icon{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding-right: 0px;
+          .text-bold{
+            text-align: center;
+          }
+        }
+        &__content{
+          justify-content: space-between;
+          .personal-account{
+            width: 50%;
+            padding-right: 0px;
+            .text-bold{
+              font-size: 18px;
+              line-height: 16.41px;
+            }
+            &__bottom{
+              margin-top: 20px ;
+              .text-bold{
+                font-size: 14px ;
+                font-weight: 10;
+              }
+              .btn{
+                .text-bold{
+                }
+              }
+            }
+          }
+          .footerright-block{
+            width: 25%;
+            flex-direction: column;
+            justify-content: start;
+            .footerright-subblock{
+              margin-bottom: 20px;
+              .text-bold{
+                line-height: 12px;
+                margin-bottom: 30px;
+              }
+            }
+          }
+        }
+        .cripta{
+          display: none;
+        }
+      }
+    }
+  }
+}

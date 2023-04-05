@@ -1,0 +1,18 @@
+@import 'fonts.scss';
+@import 'colors.scss';
+
+
+.text-bold{
+  font-family: 'Arial-bold', sans-serif;
+  font-size: 32px;
+  color:$text;
+  line-height: 56.41px;
+}
+
+.text-light{
+  font-family: 'Arial-light', sans-serif;
+  font-size: 32px;
+  color:$text;
+  line-height: 27.6px;
+
+}

@@ -1,0 +1,239 @@
+@font-face {
+  font-family: 'Arial-bold';
+  src: url(../fonts/ofont.ru_ArialL.ttf);
+}
+
+@font-face {
+  font-family: 'Arial-light';
+  src: url(../fonts/ofont.ru_ArialB.ttf);
+}
+
+@font-face {
+  font-family: 'Impact';
+  src: url(../fonts/ofont.ru_Impact.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  background: black;
+}
+
+.preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.preview__wrapper {
+  z-index: 1;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2) 0 100%), url("../assets/bitcoin.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+
+.preview .middle {
+  width: 100%;
+  height: calc(100% - 450px);
+}
+
+.preview .middle-wrapper {
+  height: 100%;
+  padding: 119px 130px 250px 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.preview .middle-wrapper .content:first-child .text-bold {
+  width: 40%;
+  font-size: 48px;
+  padding-bottom: 250px;
+  margin-top: 154px;
+}
+
+.preview .content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.preview .content .left-block {
+  width: 35%;
+}
+
+.preview .content .right-block {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  cursor: pointer;
+  width: 500px;
+  height: 80px;
+  background: #FF435A;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0 20px 36px 0 black;
+}
+
+.btn .text {
+  font-size: 48px;
+  padding: 0;
+}
+
+.hr {
+  height: 55px;
+  background: #FF435A;
+  border: none;
+}
+
+.hr:last-of-type {
+  height: 2px;
+  background: #FF435A;
+  border: none;
+}
+
+@media screen and (max-width: 1550px) {
+  .preview .middle {
+    width: 100%;
+    height: calc(100% - 450px);
+  }
+  .preview .middle-wrapper .content:first-child .text-bold {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .btn {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .preview .middle {
+    width: 100%;
+    height: calc(100% - 450px);
+  }
+  .preview .middle-wrapper .content:first-child .text-bold {
+    font-size: 40px;
+    line-height: 40px;
+    padding-bottom: 150px;
+    width: 60%;
+  }
+  .preview .content .left-block {
+    width: 50%;
+  }
+  .btn {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .preview .middle {
+    width: 100%;
+    height: calc(100% - 450px);
+  }
+  .preview .middle-wrapper .content:first-child .text-bold {
+    font-size: 30px;
+    line-height: 40px;
+    padding-bottom: 150px;
+    width: 60%;
+  }
+  .preview .content .left-block {
+    width: 60%;
+  }
+  .preview .content .left-block .text-light {
+    font-size: 25px;
+  }
+  .btn {
+    width: 200px;
+    height: 50px;
+  }
+  .btn .text-light {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .preview .middle {
+    width: 100%;
+    height: calc(100% - 450px);
+  }
+  .preview .middle-wrapper .content:first-child .text-bold {
+    font-size: 30px;
+    line-height: 40px;
+    padding-bottom: 150px;
+    width: 100%;
+  }
+  .preview .content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .preview .content .left-block {
+    width: 100%;
+    padding-bottom: 60px;
+  }
+  .preview .content .left-block .text-light {
+    font-size: 25px;
+  }
+  .btn {
+    width: 200px;
+    height: 50px;
+  }
+  .btn .text-light {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .preview__wrapper {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3) 0 100%), url("../assets/bitcoin.png");
+  }
+  .preview .middle {
+    width: 100%;
+    height: calc(100% - 450px);
+  }
+  .preview .middle-wrapper {
+    padding: 119px 20px 130px;
+  }
+  .preview .middle-wrapper .content:first-child .text-bold {
+    font-size: 20px !important;
+    line-height: 40px;
+    padding-bottom: 0px;
+    width: 100%;
+  }
+  .preview .content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .preview .content .left-block {
+    width: 100%;
+    padding-bottom: 100px;
+  }
+  .preview .content .left-block .text-light {
+    font-size: 15px !important;
+  }
+  .btn {
+    width: 200px;
+    height: 50px;
+  }
+  .btn .text-light {
+    font-size: 25px;
+  }
+}

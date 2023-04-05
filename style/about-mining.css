@@ -1,0 +1,506 @@
+@font-face {
+  font-family: 'Arial-bold';
+  src: url(../fonts/ofont.ru_ArialL.ttf);
+}
+
+@font-face {
+  font-family: 'Arial-light';
+  src: url(../fonts/ofont.ru_ArialB.ttf);
+}
+
+@font-face {
+  font-family: 'Impact';
+  src: url(../fonts/ofont.ru_Impact.ttf);
+}
+
+.about-mining {
+  background: #1d1b1b;
+  width: 100%;
+  height: 100%;
+}
+
+.about-mining .web-icon {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.about-mining__wrapper {
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 192px;
+}
+
+.about-mining__wrapper .mining {
+  z-index: 2;
+}
+
+.about-mining__wrapper .mining__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 170px;
+}
+
+.about-mining__wrapper .mining__title .text-bold {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  margin-bottom: 12px;
+}
+
+.about-mining__wrapper .mining__title .text-light {
+  z-index: 1;
+  font-size: 24px;
+}
+
+.about-mining__wrapper .mining__content:nth-child(2) .info__blocks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-mining__wrapper .mining__content:nth-child(2) .info__blocks .about-miningblocks-wrapper {
+  width: 100%;
+}
+
+.about-mining__wrapper .mining__content {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 137px;
+}
+
+.about-mining__wrapper .mining__content .info {
+  width: 80%;
+}
+
+.about-mining__wrapper .mining__content .info__title {
+  margin-bottom: 92px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-mining__wrapper .mining__content .info__title .text-bold {
+  max-width: 702px;
+  color: #FF435A;
+  font-size: 32px;
+  margin-bottom: 37px;
+}
+
+.about-mining__wrapper .mining__content .info__title .text-light {
+  max-width: 702px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.about-mining__wrapper .mining__content .info__blocks .block {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-mining__wrapper .mining__content .info__blocks .block .text-light {
+  width: 855px;
+  height: 88px;
+  display: flex;
+  border: 1px solid #FF435A;
+  border-radius: 60px;
+  padding: 14px 58px 13px 192px;
+  font-size: 22px;
+}
+
+.about-mining__wrapper .mining__content .info__blocks .block .circle {
+  background: #1d1b1b;
+  z-index: 1;
+  margin-right: -173px;
+  padding: 26px;
+  border: 1px solid #FF435A;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-mining__wrapper .mining__content .info__blocks .separate {
+  height: 48px;
+  border-left: 1px solid #FF435A;
+  margin: 0 0 0 87px;
+}
+
+.about-mining__wrapper .mining__content:nth-child(3) .info {
+  max-width: 1245px;
+}
+
+.about-mining__wrapper .mining__content:nth-child(3) .info__title {
+  margin-bottom: 92px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-mining__wrapper .mining__content:nth-child(3) .info__title .text-bold {
+  text-align: center;
+  max-width: 702px;
+  color: #FFFFFF;
+  font-size: 32px;
+  margin-bottom: 0px;
+}
+
+.about-mining__wrapper .mining__content:nth-child(3) .info__blocks {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-mining__wrapper .mining__content:nth-child(3) .info__blocks .block {
+  font-size: 24px;
+  display: inline-block;
+}
+
+.about-mining__wrapper .mining__content:nth-child(3) .info__blocks .block .text-light {
+  font-size: 24px;
+  width: 100px;
+  height: 50%;
+  padding: 0;
+  border: 0;
+}
+
+.about-mining__wrapper .mining__content:nth-child(3) .info__blocks .block .red {
+  color: #FF435A;
+}
+
+.about-mining__wrapper .mining__content:nth-child(3) .info__blocks .block:first-child {
+  margin-right: 71px;
+}
+
+.about-mining__wrapper .mining__content:nth-child(4) {
+  margin-bottom: 210px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-mining__wrapper .mining__content:nth-child(4) .drop-down {
+  max-width: 1000px;
+  height: 76px;
+  transition: 0.1s all linear;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  border: 2px solid #FFFFFF;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.about-mining__wrapper .mining__content:nth-child(4) .drop-down__right {
+  margin-bottom: 19px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 7px 14px;
+}
+
+.about-mining__wrapper .mining__content:nth-child(4) .drop-down__right .text-bold {
+  font-size: 40px;
+  transition: 0.1s;
+}
+
+.about-mining__wrapper .mining__content:nth-child(4) .drop-down__right .text-light {
+  pointer-events: none;
+  height: 50px;
+  margin-top: -45px;
+  color: #FF435A;
+  opacity: 0;
+}
+
+.about-mining__wrapper .mining__content:nth-child(4) .drop-down__right .text-light-open {
+  opacity: 1;
+}
+
+.about-mining__wrapper .mining__content:nth-child(4) .drop-down__left .down-icon {
+  cursor: pointer;
+  padding: 25px 21px;
+  transition: 0.1s;
+}
+
+.about-mining__wrapper .mining__content:nth-child(4) .drop-down:first-child {
+  margin-bottom: 159px;
+}
+
+.shadow {
+  margin: -20px;
+  width: 500px;
+  height: 10px;
+  background: #FF435A;
+  opacity: 0.6;
+  border-radius: 100%;
+  box-shadow: 0 0 57px 70px #FF435A;
+  position: absolute;
+}
+
+.drop-down-open-top {
+  height: 246px !important;
+}
+
+.drop-down-open-bottom {
+  height: 130px !important;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1 !important;
+  height: auto !important;
+}
+
+.transform {
+  transform: rotate(180deg);
+}
+
+@media screen and (max-width: 1200px) {
+  .about-mining .web-icon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  .about-mining__wrapper .info__blocks:last-of-type .icon-work {
+    width: 400px;
+  }
+  .about-mining__wrapper .mining__content:nth-child(3) .info {
+    max-width: 800px;
+  }
+  .about-mining__wrapper .mining__content:nth-child(4) .drop-down {
+    max-width: 800px;
+  }
+  .about-mining__wrapper .mining__content:nth-child(4) .drop-down .drop-down__right .text-light {
+    font-size: 25px;
+  }
+  .about-mining__wrapper .mining__content:nth-child(2) .info {
+    max-width: 750px;
+  }
+  .about-mining__wrapper .mining__content:nth-child(2) .info__blocks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-mining__wrapper .mining__content:nth-child(2) .info__blocks .about-miningblocks-wrapper {
+    width: 100%;
+  }
+  .about-mining__wrapper .mining__content:nth-child(2) .info__blocks .about-miningblocks-wrapper .text-light {
+    padding-right: 20px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .about-mining .web-icon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  .about-mining__wrapper .info__blocks:last-of-type .icon-work {
+    width: 300px;
+  }
+  .about-mining__wrapper .mining__content:nth-child(3) .info {
+    max-width: 700px;
+  }
+  .about-mining__wrapper .mining__content:nth-child(4) .drop-down {
+    max-width: 700px;
+  }
+  .about-mining__wrapper .mining__content:nth-child(4) .drop-down .drop-down__right .text-light {
+    font-size: 20px;
+  }
+  .about-mining__wrapper .mining__content .info__blocks .block .circle {
+    margin-right: -132px;
+  }
+  .about-mining__wrapper .mining__content .info__blocks .block .circle .icon {
+    width: 100px;
+  }
+  .about-mining__wrapper .mining__content:nth-child(2) .info {
+    max-width: 655px;
+  }
+  .about-mining__wrapper .mining__content:nth-child(2) .info__blocks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-mining__wrapper .mining__content:nth-child(2) .info__blocks .about-miningblocks-wrapper {
+    max-width: 600px;
+  }
+  .about-mining__wrapper .mining__content:nth-child(2) .info__blocks .about-miningblocks-wrapper .text-light {
+    padding-left: 140px;
+    padding-right: 20px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .about-mining__wrapper .mining__title .text-bold {
+    font-size: 30px;
+  }
+  .about-mining__wrapper .mining__title .text-light {
+    font-size: 18px;
+  }
+  .about-mining__wrapper .mining__content .info__title .text-bold {
+    font-size: 30px;
+  }
+  .about-mining__wrapper .mining__content .info__title .text-light {
+    font-size: 18px;
+  }
+  .about-mining__wrapper .mining__content .info__blocks .block .circle {
+    margin-right: -120px;
+  }
+  .about-mining__wrapper .mining__content .info__blocks .block .circle .icon {
+    width: 70px;
+  }
+  .about-mining__wrapper .mining__content:nth-child(2) .info__blocks .about-miningblocks-wrapper .text-light {
+    font-size: 14px;
+    padding-left: 125px;
+  }
+  .about-mining__wrapper .mining__content:nth-child(3) .info__title .text-bold {
+    font-size: 28px;
+  }
+  .about-mining__wrapper .info__blocks:last-of-type .icon-work {
+    width: 200px;
+  }
+  .about-mining__wrapper .mining__content:nth-child(3) .info__blocks .block {
+    font-size: 16px;
+  }
+  .about-mining__wrapper .mining__content:nth-child(4) .drop-down__right .text-bold {
+    font-size: 20px;
+  }
+  .about-mining__wrapper .mining__content:nth-child(4) .drop-down {
+    max-width: 420px;
+  }
+  .about-mining__wrapper .mining__content:nth-child(4) .drop-down .drop-down__right .text-light {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .about-mining__wrapper .mining__title {
+    margin-bottom: 80px;
+  }
+  .about-mining__wrapper .mining__title .text-bold {
+    font-size: 20px;
+  }
+  .about-mining__wrapper .mining__title .text-light {
+    font-size: 12px;
+  }
+  .about-mining__wrapper .mining__content .info__title .text-bold {
+    font-size: 20px;
+  }
+  .about-mining__wrapper .mining__content .info__title .text-light {
+    font-size: 12px;
+  }
+  .about-mining__wrapper .mining__content .info__blocks .block .circle {
+    margin-right: -105px;
+  }
+  .about-mining__wrapper .mining__content .info__blocks .block .circle .icon {
+    width: 60px;
+  }
+  .about-mining__wrapper .mining__content:nth-child(2) .info__blocks .about-miningblocks-wrapper .text-light {
+    font-size: 11px;
+    padding-bottom: 20px;
+    padding-left: 115px;
+  }
+  .about-mining__wrapper .mining__content:nth-child(3) .info__title .text-bold {
+    font-size: 20px;
+  }
+  .about-mining__wrapper .info__blocks:last-of-type .icon-work {
+    width: 200px;
+  }
+  .about-mining__wrapper .mining__content:nth-child(3) .info__blocks .block {
+    padding-top: 20px;
+    font-size: 16px;
+  }
+  .about-mining__wrapper .mining__content:nth-child(4) .drop-down__right .text-bold {
+    font-size: 20px;
+  }
+  .about-mining__wrapper .mining__content:nth-child(4) .drop-down {
+    max-width: 420px;
+  }
+  .about-mining__wrapper .mining__content:nth-child(4) .drop-down .drop-down__right .text-light {
+    font-size: 12px;
+  }
+  .about-mining__wrapper .mining__content:nth-child(3) .info__blocks {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-mining__wrapper .mining__content .info__blocks .block .circle .icon {
+    width: 50px;
+  }
+  .about-mining__wrapper .mining__content .info__blocks .block .circle {
+    padding: 5px;
+    margin-right: -62px;
+  }
+  .about-mining__wrapper .mining__content:nth-child(3) .info__blocks .block:first-child {
+    margin-right: 0;
+  }
+  .about-mining .web-icon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  .about-mining__wrapper .mining__content:nth-child(3) .info {
+    max-width: 300px;
+  }
+  .about-mining__wrapper .mining__content:nth-child(4) .drop-down {
+    max-width: 300px;
+  }
+  .about-mining__wrapper .mining__content:nth-child(4) .drop-down .drop-down__right .text-bold {
+    font-size: 13px;
+  }
+  .about-mining__wrapper .mining__content:nth-child(4) .drop-down .drop-down__right .text-light {
+    font-size: 16px;
+  }
+  .about-mining__wrapper .mining__content:nth-child(2) .info {
+    max-width: 350px;
+  }
+  .about-mining__wrapper .mining__content:nth-child(2) .info__blocks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-mining__wrapper .mining__content:nth-child(2) .info__blocks .about-miningblocks-wrapper {
+    max-width: 600px;
+  }
+  .about-mining__wrapper .mining__content:nth-child(2) .info__blocks .about-miningblocks-wrapper .text-light {
+    padding-top: 0;
+    padding-left: 64px;
+    padding-right: 20px;
+    font-size: 10px;
+  }
+  .about-mining .shadow {
+    width: 200px;
+  }
+  .about-mining__wrapper .mining__content:nth-child(4) .drop-down:first-child {
+    margin-bottom: 50px;
+  }
+  .about-mining__wrapper .mining__content:nth-child(4) {
+    margin-bottom: 100px;
+  }
+  .drop-down-open-top {
+    height: 546px !important;
+  }
+  .drop-down-open-bottom {
+    height: 240px !important;
+  }
+}

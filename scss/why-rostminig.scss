@@ -1,0 +1,286 @@
+@import 'colors.scss';
+@import 'fonts.scss';
+
+.why-rostminig {
+  background: $secondary;
+  &__wrapper {
+    padding: 40px;
+    .rost-mining {
+      &__title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 136px;
+        .shadow{
+          width: 700px;
+          box-shadow: 0 0 30px 50px #ff435a;;
+        }
+        .text-bold {
+          z-index: 1;
+          font-size: 32px;
+        }       
+      }
+    
+      &__slider {
+        padding-left : 150px ;
+        margin-bottom: 194px;
+        cursor: pointer;
+        .swiper-slide {
+          display: flex;
+          flex-direction: column;
+        }
+        .box-top {
+          width: 389px;
+          height: 389px;
+          margin: 0 20px;
+          background: $primary;
+          border-top-right-radius: 70px;
+          z-index: 1;
+          &__content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 45px 48px 50px;
+            .circle {
+              width: 182px ;
+              height: 182px;
+              background: $text;
+              border-radius: 50%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-bottom: 39px;
+            }
+            .circle img {
+              width: 142px;
+              height: 142px;
+            }
+            .text-light {
+              font-size: 20px;
+              line-height: 25px
+            }            
+          }
+        }
+        .box-bottom {
+          background: $text;
+          width: 389px;
+          height: 76px;
+          margin-top: -38px;
+          border-radius: 38px;
+        } 
+      }
+      &__info {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 208px;
+        .info-title {
+          text-align: center;
+          margin-bottom: 129px;
+          .text-bold {
+            display: inline-block;
+            font-size: 48px;
+            margin-bottom: 48px;
+          }
+        }
+        .info-text {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          .text-light {
+            display: inline-block;
+            font-size: 36px;
+            line-height: 42px;
+          }
+        }
+        .separate {
+          display: flex;
+          text-align: center;          
+          .text-light{
+            line-height: 42px;
+          }
+          margin-bottom: 42px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:900px) {
+  .why-rostminig {
+    background: $secondary;
+    &__wrapper {
+      padding: 40px;
+      .rost-mining {
+        &__title {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 136px;
+          .shadow{
+            width: 550px;
+            box-shadow: 0 0 30px 50px #ff435a;
+          }
+          .text-bold {
+            line-height: 40px;
+            text-align: center;
+            z-index: 1;
+            font-size: 32px;
+          }       
+        }
+        &__info {
+          .info-title {
+            .text-bold {
+              display: inline-block;
+              font-size: 32px;
+              margin-bottom: 48px;
+            }
+          }
+          .info-text {
+            .text-light {
+              display: inline-block;
+              font-size: 28px;
+              line-height: 42px;
+              text-align: start;
+            }
+          }
+        }
+        &__slider {
+          padding: 0;
+          .swiper-slide {
+          }
+          .box-top {
+            width: 289px;
+            height: 289px;
+            margin: 0 20px;
+            background: $primary;
+            border-top-right-radius: 70px;
+            z-index: 1;
+            &__content{
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              padding: 20px 20px 0px;
+              .circle {
+                width: 120px ;
+                height: 120px;
+                background: $text;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 39px;
+              }
+              .circle img {
+                width: 120px;
+                height: 120px;
+              }
+              .text-light {
+                font-size: 20px;
+                line-height: 25px
+              }            
+            }
+          }
+          .box-bottom{
+            width: 289px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:600px) {
+  .why-rostminig {
+    background: $secondary;
+    &__wrapper {
+      padding: 20px;
+      .rost-mining {
+        &__title {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 136px;
+          .shadow{
+            width: 250px;
+            box-shadow: 0 0 30px 50px #ff435a;
+          }
+          .text-bold {
+            line-height: 30px;
+            text-align: center;
+            z-index: 1;
+            font-size: 22px;
+          }       
+        }
+        &__info {
+          padding-bottom: 50px;
+          .info-title {
+            .text-bold {
+              display: inline-block;
+              font-size: 20px;
+              line-height: 30px;
+              margin-bottom: 48px;
+            }
+            .text-light{
+              font-size: 18px;
+            }
+          }
+          .info-text {
+            
+             .text-light {
+              padding: 20px;
+              display: inline-block;
+              font-size: 14px;
+              line-height: 42px;
+              text-align: start;
+            }
+          }
+        }
+        &__slider {
+          padding: 0;
+          .swiper-slide {
+          }
+          .box-top {
+            width: 189px;
+            height: 189px;
+            margin: 0 20px;
+            background: $primary;
+            border-top-right-radius: 70px;
+            z-index: 1;
+            &__content{
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              padding: 20px 20px 0px;
+              .circle {
+                width: 60px ;
+                height: 60px;
+                background: $text;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 10px;
+              }
+              .circle img {
+                width: 40px;
+                height: 40px;
+              }
+              .text-light {
+                font-size: 15px;
+                line-height: 25px
+              }            
+            }
+          }
+          .box-bottom{
+            width: 189px;
+          }
+        }
+      }
+    }
+  }
+}

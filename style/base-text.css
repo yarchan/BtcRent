@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'Arial-bold';
+  src: url(../fonts/ofont.ru_ArialL.ttf);
+}
+
+@font-face {
+  font-family: 'Arial-light';
+  src: url(../fonts/ofont.ru_ArialB.ttf);
+}
+
+@font-face {
+  font-family: 'Impact';
+  src: url(../fonts/ofont.ru_Impact.ttf);
+}
+
+.text-bold {
+  font-family: 'Arial-bold', sans-serif;
+  font-size: 32px;
+  color: #FFFFFF;
+  line-height: 56.41px;
+}
+
+.text-light {
+  font-family: 'Arial-light', sans-serif;
+  font-size: 32px;
+  color: #FFFFFF;
+  line-height: 27.6px;
+}

@@ -1,0 +1,236 @@
+@import 'colors.scss';
+@import 'fonts.scss';
+
+.header{
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+}
+
+.top{
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.top-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 32px;
+  margin-bottom: 19px; 
+  .text-bold:last-child{
+    font-size: 32px;
+    color: $primary;
+  }
+}
+
+
+.menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid $primary;
+  &__link{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid $primary;
+    border-top: none;
+    border-radius: 0 0 25px 25px;
+    width: 60%;
+
+    .text-light{
+      height: 100%;
+      cursor: pointer;
+      border-right: 2px solid $primary;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      font-size: 20px;
+      color:$primary;
+      text-decoration: none;
+      transition: 0.8s all;
+    }
+    .text-light:last-of-type{
+      border: none;
+      border-radius: 0 0 25px 0 ;
+    }
+    .text-light:hover{
+      color: #AD424F;
+    }
+
+  }
+  &__icons{
+    .cripta:first-child{
+      position: absolute;
+      top: 60px;
+      margin-right: 100px;
+    }
+    .cripta{
+      width: 92px;
+      top: 60px;
+      background: black;
+      border-radius: 50px;
+    }
+  }
+}
+
+.cripta{
+  position: absolute;
+  right: 3%;
+  width: 100px;
+  height: 100px;
+}
+
+
+@media screen and (max-width:500px) {
+  .menu{
+    &__link{
+      height: 50px;
+      width: 90% !important;
+      .text-light{
+        font-size: 14px;
+      }
+      .text-light:last-child{
+      }
+    }
+    &__icons{
+      .cripta:first-child{
+      }
+      .cripta{
+        display: none;
+        width: 50px;
+      }
+    }
+  }
+}
+
+@media screen and(max-width:600px) {
+  .menu{
+    &__link{
+      height: 50px;
+      width: 80% !important;
+      .text-light{
+        font-size: 14px;
+      }
+      .text-light:last-child{
+      }
+    }
+    &__icons{
+      .cripta:first-child{
+      }
+      .cripta{
+        display: none;
+        width: 50px;
+      }
+    }
+  } 
+}
+
+@media screen and(max-width:750px) {
+  .menu{
+    &__link{
+      height: 50px;
+      width: 65%;
+      .text-light{
+        font-size: 14px;
+      }
+      .text-light:last-child{
+      }
+    }
+    &__icons{
+      .cripta:first-child{
+      }
+      .cripta{
+        display: none;
+        width: 50px;
+      }
+    }
+  }
+}
+
+@media screen and(max-width:900px) {
+  .menu{
+    &__link{
+      height: 50px;
+      width: 65%;
+      .text-light{
+        font-size: 14px;
+      }
+      .text-light:last-child{
+      }
+    }
+    &__icons{
+      .cripta:first-child{
+        margin-right: 55px !important;
+      }
+      .cripta{
+        width: 45px !important;
+        height: 50px !important;
+        top: 85px !important;
+      }
+      .cripta img{
+        width: 50px !important;
+        height: 50px !important;
+        top: 85px !important;
+      }
+    }
+  }  
+}
+
+@media screen and(max-width:1300px) {
+  .menu{
+    &__link{
+      .text-light{
+        font-size: 16px;
+      }
+      .text-light:last-child{
+      }
+    }
+    &__icons{
+      .cripta:first-child{
+        top: 75px;
+
+      }
+      .cripta{
+        width: 70px;
+      }
+    }
+  }  
+}
+
+@media screen and(max-width:1550px) {
+
+  .menu{
+    &__link{
+      .text-light{
+      }
+      .text-light:last-child{
+      }
+    }
+    &__icons{
+      .cripta:first-child{
+        width: 68px;
+        top: 75px;
+        margin-right:70px ;
+      }
+      .cripta{
+        width: 63px;
+        top: 75px;
+      }
+      .cripta img{
+        width: 70px;
+        height: 70px;
+        top: 75px;
+      }      
+      .cripta:last-child img{
+        width: 65px;
+        height: 70px;
+        top: 75px;
+      }      
+    }
+  }  
+}
+
